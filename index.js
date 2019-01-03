@@ -1,7 +1,8 @@
-
+var linePlace = 0
 function takeANumber(queue, newCustomer){
   queue.push(newCustomer)
-  return `Welcome, ${newCustomer}. You are number ${queue.length} in line.`
+  linePlace++
+  return `Welcome, ${newCustomer}. You are number ${queue.length} in line, and your ticket number is ${linePlace}.`
 }
 
 function nowServing(currentLine){
